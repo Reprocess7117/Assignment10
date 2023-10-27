@@ -18,6 +18,7 @@ switch (option) {
 	w=input.nextDouble();
 	Square square = new Square(l,w);
 	System.out.println("Perimeter: " + square.calculatePerimeter() + "\nArea: " + square.calculateArea());
+   	   break;
    case 2://Rectangle
 	System.out.println("You selected Rectangle\nPlease Enter Length(0.0):");
 	l=input.nextDouble();
@@ -25,19 +26,21 @@ switch (option) {
 	w=input.nextDouble();
 	Rectangle rectangle = new Rectangle(l,w);
 	System.out.println("Perimeter: " + rectangle.calculatePerimeter() + "\nArea: "+ rectangle.calculateArea());
+	   break;
    case 3://Triangle
 	double s;
 	System.out.println("You selected Triangle\nPlease Enter Side Length(0.0):");
 	s=input.nextDouble();
 	Triangle triangle = new Triangle(s);
 	System.out.println("Perimeter: " + triangle.calculatePerimeter() + "\nArea: " + triangle.calculateArea());
+   	   break;
    case 4://Circle
 	double r;
 	System.out.println("You selected Circle\nPlease Enter Radius(0.0):");
 	r=input.nextDouble();
 	Circle circle = new Circle(r);
 	System.out.println("Circumference: " + circle.calculateCircumference() + "\nArea: " + circle.calculateArea());
-
+	   break;
 }
 
 
